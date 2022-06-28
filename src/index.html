@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>EMT - Consultas TS</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <!-- Begin Header -->
+  <div id="header"><h1><a href="http://emtcbarme-0288d/engenharia/">Principal</a></h1></div>
+  <!-- End Header -->
+  <!-- Begin Navigation -->
+  <div id="navigation">  
+
+  </div>
+  <!-- End Navigation -->
+  <!-- Begin Left Column -->
+  <div id="leftcolumn">
+  <br />
+  <p><b> Menu de Opções </b></p>
+  <br />
+  <a href="http://emtcbarme-0288d/consultas/upload.html"> Upload de Arquivos </a>
+  <br />
+  <br />
+  <a href="http://emtcbarme-0288d/consultas/compensacao.html"> Simular Compensação </a> 
+  <br />
+  <br />
+  <a href="http://emtcbarme-0288d/consultas/preoperacao.html"> Relatório Pré-Operação </a> 
+
+  <br />
+  <br />
+  </div>
+  <!-- End Left Column -->
+  <!-- Begin Right Column -->
+  <div id="rightcolumn"> 
+  
+  <p> Consultas Ocorrências: </p>
+  <p> . </p>
+  	  <form action="/consultas/uc_ocorrencias.php" method="get">
+		Data Inicio:
+		<input type="date" name="data_inicio" id="data_inicio" value="" required>
+		Data Fim:
+		<input type="date" name="data_fim" id="data_fim" value="" required>
+		Unidade Consumidora:
+		<input type="text" name="num_uc" id="num_uc" value="" required>
+		<input type="submit" value=" Executar ">
+	  </form> 
+  <p> . </p>
+  <p> Consultas Ocorrências Nova: </p>
+  <p> . </p>
+  	  <form action="/consultas/uc_ocorrencias_nova.php" method="get">
+		Data Inicio:
+		<input type="date" name="data_inicio" id="data_inicio" value="" required>
+		Data Fim:
+		<input type="date" name="data_fim" id="data_fim" value="" required>
+		Unidade Consumidora:
+		<input type="text" name="num_uc" id="num_uc" value="" required>
+		<input type="submit" value=" Executar ">
+	  </form> 
+  <p> . </p>
+  <p> Consultas Indicadores da UC: </p>
+  <p> . </p>
+  	  <form action="/consultas/uc_indicadores.php" method="get">
+		Data Inicio:
+		<input type="date" name="data_inicio" id="data_inicio" value="" required>
+		Data Fim:
+		<input type="date" name="data_fim" id="data_fim" value="" required>
+		Unidade Consumidora:
+		<input type="text" name="num_uc" id="num_uc" value="" required>
+		<input type="submit" value=" Executar ">
+	  </form>
+  <p> . </p>
+  <p> Consultas Passos de Manobras da Interrupções: </p>
+  <p> . </p>
+	  <form action="/consultas/os_passos.php" method="get">
+		Ordem de Serviço 'OS':
+		<input type="text" name="num_os" id="num_os" value="" required>
+		<input type="submit" value=" Executar ">
+	  </form> 
+  <br />
+  <hr />
+  <br />
+    
+  </div>
+  <!-- End Right Column -->
+  <!-- Begin Footer -->
+  <div id="footer"> Engenharia da Operação - 3316-5254 </div>
+  <!-- End Footer -->
+ </div>
+<!-- End Wrapper -->
+</body>
+</html>
